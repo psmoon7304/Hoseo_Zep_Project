@@ -1,4 +1,3 @@
-// Fix
 const _dev = ["키즈힘"]; // 개발자
 let _admin = ["또바기","박성문","키즈힘","psmoon7304!"]; // 학생회
 let _partleader = ["테스트","psmoon7304"]; // 학회장
