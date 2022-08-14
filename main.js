@@ -45,12 +45,12 @@ App.onJoinPlayer.Add(function(player) { // 플레이어가 서버에 접속시
     player.sendUpdated();
 });
 
-App.onSay.Add(function(player,text) {
+App.onSay.Add(function(player,text) { // 플레이어 채팅 이벤트 / 명령어 등 관리
     if(player.tag.rank >= 9 && text == "!모두모여") {
         for(let i in _players) {
             let pInfo = _players[i];
             pInfo.spawnAt(player.tileX,player.tileY,3)
-            App.showCenterLabel(`${player.name}님 모든 플레이어를 텔레포트 시켰습니다.`,0xff0000);
+            App.showCenterLabel(`${player.name}님이 모든 플레이어를 텔레포트 시켰습니다.`,0xff0000);
         }
     }
 })
